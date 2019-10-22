@@ -4,7 +4,7 @@
 
 **No Bugs || not tested in safari.
 
-live demo:http://aruncoolpage.co.nf/PluginDemo/Page_progress_meter/
+live demo:http://aruncoolpage.c1.biz/PluginDemo/Page_progress_meter/
 
 plugin author: M.Arun Bharath s/o A.Mathiyazhalagan
 
