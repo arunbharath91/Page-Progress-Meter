@@ -1,12 +1,11 @@
 
-class ProgressMeter {
-  private selector: string;
-  constructor(selector = 'progress') {
-    this.selector = selector;
-    this.onloadRegistry();
+export class ProgressMeter {
+  private selector!: string;
+  constructor() {
   }
 
-  onloadRegistry() {
+  add(selector = 'progress') {
+    this.selector = selector;
     window.onload = () => {
       const scrollElem = document.documentElement as HTMLElement;
       const distance = (scrollElem.scrollHeight - scrollElem.clientHeight);
@@ -25,5 +24,3 @@ class ProgressMeter {
     (document.querySelector(this.selector) as HTMLElement).setAttribute('value', (scrollElem.scrollTop).toString());
   }
 }
-
-const progress = new ProgressMeter();

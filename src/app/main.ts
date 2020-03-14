@@ -1,2 +1,2 @@
 import '../style.scss';
-import "./progress";
+import "./progress-config";
