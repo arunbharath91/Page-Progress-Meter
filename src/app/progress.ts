@@ -4,7 +4,7 @@ export class ProgressMeter {
   constructor() {
   }
 
-  add(selector = 'progress') {
+  public add(selector = 'progress') {
     this.selector = selector;
     window.onload = () => {
       const scrollElem = document.documentElement as HTMLElement;
@@ -19,7 +19,7 @@ export class ProgressMeter {
   }
 
 
-  bootProgress() {
+  protected bootProgress() {
     const scrollElem = document.documentElement;
     (document.querySelector(this.selector) as HTMLElement).setAttribute('value', (scrollElem.scrollTop).toString());
   }
